@@ -74,13 +74,13 @@
                 <!-- lgoo and menu items -->
                 <div class="flex items-center gap-9 ">
 
-                    <div>
+                    <div class="xl:flex hidden">
                         <img src="./app-logo.png" class="w-15" alt="coffe shop">
                     </div>
 
 
                     <ul
-                        class="flex text-md font-normal text-gray-300 gap-9 tracking-tightest child:cursor-pointer top-10">
+                        class="flex text-[18px] xl:text-md font-normal text-gray-300 gap-3 xl:gap-9  tracking-tightest child:cursor-pointer top-10 child-hover:text-orange-300">
                         <li class="text-orange-300">صفحه اصلی</li>
                         <div
                             class="relative group  hover:text-orange-300 transition-all hover:child:visible hover:child:opacity-100">
@@ -110,8 +110,8 @@
 
 
 
-                <div class="flex justify-between items-center gap-x-10 ">
-                    <div class=" flex gap-x-5">
+                <div class="flex justify-between items-center gap-x-5 xl:gap-x-10">
+                    <div class="flex gap-x-5">
 
 
                         <button id="theme-toggle" class=" text-orange-300">
@@ -329,17 +329,7 @@
 
                                 </div>
 
-
-
-
-
-
-
-
                             </div>
-
-
-
 
                         </div>
                     </div>
@@ -348,14 +338,14 @@
 
 
 
-                    <div class="flex items-center  text-orange-300 ">
+                    <a href="#" class="flex items-center  text-orange-300 ">
                         <svg class="w-9 h-9">
                             <use href="#right-arrow"></use>
 
                         </svg>
-                        <p class="font-normal text-md">ورود | ثبت‌نام</p>
+                        <p class="font-normal text-md xl:block hidden">ورود | ثبت‌نام</p>
 
-                    </div>
+                    </a>
 
 
 
