@@ -430,10 +430,10 @@
                 <!-- top -->
                 <div class="flex items-center justify-between   border-b-[1px] border-gray-100 dark:border-white/10 ">
                     <div class="flex gap-x-3.5 pb-2">
-                        <img src="/public/svgs/logo.svg" class="">
+                        <img src="./svgs/logo.svg" class="">
 
 
-                        <img src="/public/svgs/logo-type.svg" class="w-[100px]">
+                        <img src="./svgs/logo-type.svg" class="w-[100px]">
 
                     </div>
 
@@ -520,7 +520,7 @@
                 </div>
 
 
-                
+
 
 
                 <!-- this is links -->
@@ -565,12 +565,156 @@
 
             </div>
 
-            <div>
-                <img src="/public/svgs/logo-type.svg" alt="">
+            <!-- sidebar -->
+            <div id="mobile-cart"
+                class="fixed overflow-auto top-0 bottom-0 left-[-100%] w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all">
+
+
+                <!-- top box -->
+                <div class="flex items-center justify-between   border-b-[1px] border-gray-100 dark:border-white/10 ">
+
+
+
+                    <button onclick="closeMenu()">
+                        <svg class="w-8 h-8  text-black dark:text-orange-300 pr-2">
+                            <use href="#xmark"></use>
+                        </svg>
+                    </button>
+
+                    <p class="text-black dark:text-orange-300 pr-2">
+                        سبد خرید
+                    </p>
+
+                </div>
+
+
+                <!-- items box -->
+                <div class="overflow-auto max-h-[80%] w-full ">
+
+                    <div class="my-4 w-full">
+                        <div class="flex items-center w-full">
+                            <!-- image -->
+
+                            <img class="h-[90px] w-[90px]" src="./products/p2.png" alt="">
+
+
+
+                            <div class="flex-col ">
+
+                                <!-- title box -->
+                                <p class="text-sm font-medium text-dark dark:text-gray-300">قهوه اسپرسو
+                                    بن
+                                    مانو
+                                    مدل پریسکا 250 گرمی
+                                </p>
+
+
+                                <div class="flex items-center justify-between ">
+
+
+                                    <div class="flex flex-col mt-2">
+                                        <p class="text-teal-600 tracking-tighter font-medium text-xs">14.500 تومان تخفیف
+                                        </p>
+                                        <p class="font-semibold text-[16px] text-dark dark:text-gray-300">
+                                            175,000
+                                            <span class="font-[400] text-sm text-dark dark:text-gray-300">تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class=" h-px border-t-gray-300 border-t-[1px]"></div>
+                    </div>
+
+                    <div class="my-4 w-full">
+                        <div class="flex items-center w-full">
+                            <!-- image -->
+
+                            <img class="h-[90px] w-[90px]" src="./products/p1.png" alt="">
+
+
+
+                            <div class="flex-col ">
+
+                                <!-- title box -->
+                                <p class="text-sm font-medium text-dark dark:text-gray-300">قهوه اسپرسو
+                                    بن
+                                    مانو
+                                    مدل پریسکا 250 گرمی
+                                </p>
+
+
+                                <div class="flex items-center justify-between ">
+
+
+                                    <div class="flex flex-col mt-2">
+                                        <p class="text-teal-600 tracking-tighter font-medium text-xs">14.500 تومان تخفیف
+                                        </p>
+                                        <p class="font-semibold text-[16px] text-dark dark:text-gray-300">
+                                            175,000
+                                            <span class="font-[400] text-sm text-dark dark:text-gray-300">تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class=" h-px border-t-gray-300 border-t-[1px]"></div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!-- payment part -->
+                <div class="absolute bottom-0 flex gap-3 pb-5 items-center justify-between  bg-white dark:bg-zinc-700">
+
+                    <div>
+
+                        <button class="h-[44px] w-[112px] bg-teal-600 dark:bg-teal-500 rounded-xl text-white">
+                            ثبت سفارش
+                        </button>
+
+                    </div>
+                    
+                    <div class="flex-col">
+                        <span class="font-medium text-xs text-gray-500 dark:text-gray-300  tracking-tighter">مبلغ
+                            قابل
+                            پرداخت</span>
+                        <p class="font-semibold text-[16px] text-dark dark:text-gray-300">350,000
+                            <span class="font-[400] text-sm text-dark dark:text-gray-300">تومان</span>
+                        </p>
+                    </div>
+
+                </div>
+
+
+
             </div>
 
 
-            <div class="flex items-center gap-2 pl-2">
+
+
+
+            <div>
+                <img src="./svgs/logo-type.svg" alt="">
+            </div>
+
+
+            <div class="flex items-center gap-2 pl-2" onclick="openMenu()">
 
 
                 <svg class="w-7 h-7  text-zinc-700 dark:text-orange-300">
@@ -582,10 +726,11 @@
         </nav>
     </header>
 
-    
 
 
-    <div id="overlayBar" onclick="closeSideBar()" class="overlay bg-black/40 z-10 fixed inset-0 w-full h-full hidden">
+
+    <div id="overlayBar" onclick="closeSideBar(),closeMenu()"
+        class="overlay bg-black/40 z-10 fixed inset-0 w-full h-full hidden">
     </div>
 
 

@@ -118,6 +118,7 @@ themeToggleBtnMobile.addEventListener('click', function () {
 
 
 var sidebar = document.getElementById("sidebar")
+var mobileMenu = document.getElementById("mobile-cart")
 
 function closeSideBar() {
     sidebar.classList.remove("right-0")
@@ -129,6 +130,21 @@ function closeSideBar() {
 function openSideBar() {
     sidebar.classList.add("right-0")
     sidebar.classList.remove("right-[-100%]")
+    document.getElementById("overlayBar").classList.remove("hidden")
+}
+
+
+
+function closeMenu() {
+    mobileMenu.classList.remove("left-0")
+    mobileMenu.classList.add("left-[-100%]")
+    document.getElementById("overlayBar").classList.add("hidden")
+}
+
+
+function openMenu() {
+    mobileMenu.classList.add("left-0")
+    mobileMenu.classList.remove("left-[-100%]")
     document.getElementById("overlayBar").classList.remove("hidden")
 }
 
