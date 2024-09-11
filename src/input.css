@@ -3,6 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+
+    
+    /* width */
+    ::-webkit-scrollbar {
+        width: 7px;
+        
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 7px;
+        padding-left: 10px;
+
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #FDBA74;
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #FDBA74;
+    }
+
     @font-face {
         font-family: "Dana";
         src: local("Dana"), url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2");
