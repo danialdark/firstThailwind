@@ -123,14 +123,14 @@ var mobileMenu = document.getElementById("mobile-cart")
 function closeSideBar() {
     sidebar.classList.remove("right-0")
     sidebar.classList.add("right-[-100%]")
-    document.getElementById("overlayBar").classList.add("hidden")
+    // document.getElementById("overlayBar").classList.add("invisible")
 }
 
 
 function openSideBar() {
     sidebar.classList.add("right-0")
     sidebar.classList.remove("right-[-100%]")
-    document.getElementById("overlayBar").classList.remove("hidden")
+    // document.getElementById("overlayBar").classList.remove("invisible")
 }
 
 
@@ -138,13 +138,13 @@ function openSideBar() {
 function closeMenu() {
     mobileMenu.classList.remove("left-0")
     mobileMenu.classList.add("left-[-100%]")
-    document.getElementById("overlayBar").classList.add("hidden")
+    // document.getElementById("overlayBar").classList.add("invisible")
 }
 
 
 function openMenu() {
     mobileMenu.classList.add("left-0")
     mobileMenu.classList.remove("left-[-100%]")
-    document.getElementById("overlayBar").classList.remove("hidden")
+    // document.getElementById("overlayBar").classList.remove("invisible")
 }
 
