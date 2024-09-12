@@ -38,6 +38,13 @@ module.exports = {
           "DEFAULT": '1rem',
           "sm": '.0625rem',
         }
+      },
+      "backgroundImage": {
+        "mobile": "url(../headerBgMobile.webp)",
+        "desktop": "url(../headerBgDesktop.webp)",
+
+        "content": "url(../body-bg.png)",
+
       }
     },
 

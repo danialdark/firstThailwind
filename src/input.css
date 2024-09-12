@@ -67,17 +67,4 @@
     }
 
 
-    body {
-        background-image: url('../headerBgDesktop.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @media (max-width: 767px) {
-        body {
-            background-image: url('../headerBgMobile.webp');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
 }
