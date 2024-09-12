@@ -9,7 +9,7 @@
     <link rel="icon" href="./app-logo.png">
 </head>
 
-<body class="font-Dana bg-white dark:bg-gray-800">
+<body class="font-Dana bg-gray-100 dark:bg-gray-800">
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -437,7 +437,7 @@
     </header>
 
     <!-- mobile header -->
-    <header class="w-full h-16 bg-white dark:bg-zinc-700 sm:hidden ">
+    <header class="w-full h-16 bg-gray-100 dark:bg-zinc-700 sm:hidden ">
         <nav class=" flex h-full items-center justify-between ">
 
             <div onclick="openSideBar()">
@@ -784,7 +784,7 @@
         <!-- content -->
 
         <section
-            class="min-h-screen bg-center bg-cover bg-no-repeat  bg-[center-top] bg-white dark:bg-gray-800  sm:bg-content">
+            class="min-h-screen bg-center bg-cover bg-no-repeat  bg-[center-top] bg-gray-100 dark:bg-gray-800  sm:bg-content">
 
             <div class="w-[90%]  sm:w-[68%] right-0 left-0 mx-auto">
 
@@ -1406,8 +1406,8 @@
         </section>
 
 
-
-        <section class="min-h-screen bg-white dark:bg-gray-800 ">
+        <!-- menu and menu pictures -->
+        <section class=" bg-gray-100 dark:bg-gray-800 ">
 
             <!-- big categories -->
             <div>
@@ -1475,6 +1475,449 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- slider -->
+        <section class=" bg-gray-100 dark:bg-gray-800 xl:mt-[80px] mt-8">
+
+            <div class="w-[90%] sm:w-[68%] right-0 left-0 mx-auto">
+
+                <!-- main product container -->
+                <div class="">
+
+
+                    <!-- top bar -->
+                    <div class="flex justify-between items-center">
+                        <div class="text-zinc-700 dark:text-white">
+                            <p class="font-MorabbaMedium font-medium sm:text-5xl text-2xl text">محصولات پر فروش</p>
+                            <p class="mt-[6px] font-MorabbaLight font-[300px] sm:text-3xl text-[18px]"> پیشنهاد قهوه خور
+                                ها ...</p>
+                        </div>
+                        <div
+                            class="flex text-[16px] sm:text-md text-orange-300 items-center tracking-tightest font-[400]">
+                            <a href="#">مشاهده همه </a>
+
+                            <svg class="w-4 h-4">
+
+                                <use href="#chevron-left"></use>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <!-- product container -->
+                    <div class="grid grid-cols-2 gap-2  xl:grid-cols-4 xl:gap-4 font-Dana mt-[40px] ">
+                        <div class="shadow rounded-2xl bg-white dark:bg-zinc-700">
+
+                            <div class="mx-auto">
+                                <img class="mx-auto" src="./products/p5.png" alt="">
+                            </div>
+
+                            <!-- title -->
+                            <div class="font-medium text-sm xl:text-md text-gray-700 dark:text-white mx-5">
+                                <p>قهوه ترک بن مانو </p>
+                            </div>
+
+                            <!-- price -->
+                            <div class="flex mt-[10px] ">
+                                <div class="flex text-teal-500 items-center mr-5 ml-2">
+                                    <p class="font-semibold text-sm xl:text-md "> 175,000 </p>
+
+                                    <span class="font-[400] text-sm tracking-tighter mr-1">تومان</span>
+                                </div>
+
+                                <div class="flex  items-center text-gray-400">
+                                    <del class="font-semibold text-sm xl:text-md  tracking-tighter"
+                                        style="text-decoration-color: red;text-decoration-thickness: 2px;text-decoration-style: solid;">
+                                        175,000 </del>
+
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+                                <!-- cart and stars -->
+                                <div class="flex mt-[4px] mx-2 xl:mx-5  mb-5 gap-2 items-center">
+                                    <div
+                                        class="rounded-full bg-[#F3F4F6] dark:bg-[#27272A] dark:bg h-9 w-9 flex items-center justify-center">
+                                        <svg class="text-gray-400  h-4 w-4 xl:w-6 xl:h-6">
+                                            <use href="#shopping-cart"></use>
+                                        </svg>
+                                    </div>
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6">
+                                        <use href="#array-both"></use>
+                                    </svg>
+
+
+                                </div>
+
+                                <div class="flex mx-auto mb-5 items-center">
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="shadow rounded-2xl bg-white dark:bg-zinc-700">
+
+                            <div class="mx-auto">
+                                <img class="mx-auto" src="./products/p6.png" alt="">
+                            </div>
+
+                            <!-- title -->
+                            <div class="font-medium text-sm xl:text-md text-gray-700 dark:text-white mx-5">
+                                <p>قهوه ترک بن مانو </p>
+                            </div>
+
+                            <!-- price -->
+                            <div class="flex mt-[10px] ">
+                                <div class="flex text-teal-500 items-center mr-5 ml-2">
+                                    <p class="font-semibold text-sm xl:text-md "> 175,000 </p>
+
+                                    <span class="font-[400] text-sm tracking-tighter mr-1">تومان</span>
+                                </div>
+
+                                <div class="flex  items-center text-gray-400">
+                                    <del class="font-semibold text-sm xl:text-md  tracking-tighter"
+                                        style="text-decoration-color: red;text-decoration-thickness: 2px;text-decoration-style: solid;">
+                                        175,000 </del>
+
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+                                <!-- cart and stars -->
+                                <div class="flex mt-[4px] mx-2 xl:mx-5  mb-5 gap-2 items-center">
+                                    <div
+                                        class="rounded-full bg-[#F3F4F6] dark:bg-[#27272A] dark:bg h-9 w-9 flex items-center justify-center">
+                                        <svg class="text-gray-400  h-4 w-4 xl:w-6 xl:h-6">
+                                            <use href="#shopping-cart"></use>
+                                        </svg>
+                                    </div>
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6">
+                                        <use href="#array-both"></use>
+                                    </svg>
+
+
+                                </div>
+
+                                <div class="flex mx-auto mb-5 items-center">
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="shadow rounded-2xl bg-white dark:bg-zinc-700">
+
+                            <div class="mx-auto">
+                                <img class="mx-auto" src="./products/p7.png" alt="">
+                            </div>
+
+                            <!-- title -->
+                            <div class="font-medium text-sm xl:text-md text-gray-700 dark:text-white mx-5">
+                                <p>قهوه ترک بن مانو </p>
+                            </div>
+
+                            <!-- price -->
+                            <div class="flex mt-[10px] ">
+                                <div class="flex text-teal-500 items-center mr-5 ml-2">
+                                    <p class="font-semibold text-sm xl:text-md "> 175,000 </p>
+
+                                    <span class="font-[400] text-sm tracking-tighter mr-1">تومان</span>
+                                </div>
+
+                                <div class="flex  items-center text-gray-400">
+                                    <del class="font-semibold text-sm xl:text-md  tracking-tighter"
+                                        style="text-decoration-color: red;text-decoration-thickness: 2px;text-decoration-style: solid;">
+                                        175,000 </del>
+
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+                                <!-- cart and stars -->
+                                <div class="flex mt-[4px] mx-2 xl:mx-5  mb-5 gap-2 items-center">
+                                    <div
+                                        class="rounded-full bg-[#F3F4F6] dark:bg-[#27272A] dark:bg h-9 w-9 flex items-center justify-center">
+                                        <svg class="text-gray-400  h-4 w-4 xl:w-6 xl:h-6">
+                                            <use href="#shopping-cart"></use>
+                                        </svg>
+                                    </div>
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6">
+                                        <use href="#array-both"></use>
+                                    </svg>
+
+
+                                </div>
+
+                                <div class="flex mx-auto mb-5 items-center">
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="shadow rounded-2xl bg-white dark:bg-zinc-700">
+
+                            <div class="mx-auto">
+                                <img class="mx-auto" src="./products/p8.png" alt="">
+                            </div>
+
+                            <!-- title -->
+                            <div class="font-medium text-sm xl:text-md text-gray-700 dark:text-white mx-5">
+                                <p>قهوه ترک بن مانو </p>
+                            </div>
+
+                            <!-- price -->
+                            <div class="flex mt-[10px] ">
+                                <div class="flex text-teal-500 items-center mr-5 ml-2">
+                                    <p class="font-semibold text-sm xl:text-md "> 175,000 </p>
+
+                                    <span class="font-[400] text-sm tracking-tighter mr-1">تومان</span>
+                                </div>
+
+                                <div class="flex  items-center text-gray-400">
+                                    <del class="font-semibold text-sm xl:text-md  tracking-tighter"
+                                        style="text-decoration-color: red;text-decoration-thickness: 2px;text-decoration-style: solid;">
+                                        175,000 </del>
+
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+                                <!-- cart and stars -->
+                                <div class="flex mt-[4px] mx-2 xl:mx-5  mb-5 gap-2 items-center">
+                                    <div
+                                        class="rounded-full bg-[#F3F4F6] dark:bg-[#27272A] dark:bg h-9 w-9 flex items-center justify-center">
+                                        <svg class="text-gray-400  h-4 w-4 xl:w-6 xl:h-6">
+                                            <use href="#shopping-cart"></use>
+                                        </svg>
+                                    </div>
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6">
+                                        <use href="#array-both"></use>
+                                    </svg>
+
+
+                                </div>
+
+                                <div class="flex mx-auto mb-5 items-center">
+                                    <svg class="text-gray-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+                                    <svg class="text-yellow-400   h-4 w-4 xl:w-6 xl:h-6 ">
+                                        <use href="#star"></use>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+        <!-- mobile card -->
+        <section class=" xl:mt-[80px] mt-8 flex  md:hidden shadow">
+            <div class="w-[90%] sm:w-[68%] right-0 left-0 mx-auto rounded-3xl py-8 px-3"
+                style="background: linear-gradient(90deg, #10B981 0%, #059669 100%);">
+                <div class="flex items-center justify-center gap-x-2">
+                    <img src="./club/diamond.png" class="w-[87px] h-[78px]" alt="">
+
+                    <div class="font-MorabbaMedium text-white">
+                        <p class="text-[24px] xl:text-[48px] font-bold">کافی کلاب</p>
+                        <p class="text-[18px] xl:text-[24px] font-[300]">میدونستی میتونی با امتیاز هات قهوه بگیری ؟</p>
+                    </div>
+                </div>
+
+
+                <div class="flex mt-10 gap-x-1">
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-3xl p-1.5 ">
+                        <img src="./club/Discovery.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-3xl p-1.5 ">
+                        <img src="./club/Ticket-Star.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-3xl p-1.5 ">
+                        <img src="./club/Activity.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+                    <div class="text-white font-MorabbaMedium mx-auto">
+                        <p class="text-[24px] xl:text-[48px] font-bold">542</p>
+                        <p class="text-[18px] xl:text-[24px] font-[300]">امتیـــــــاز شما</p>
+                        <button
+                            class="h-[26px] bg-teal-600 px-auto w-[100px] rounded-xl text-white flex items-center justify-center"
+                            style="background: linear-gradient(270deg, #FDBA74 0%, #FED7AA 100%);">
+                            دریافت جایزه
+
+                            <svg class="w-5 h-5 text-white">
+                                <use href="#chevron-left"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div></div>
+        </section>
+
+
+        <!-- desktop card -->
+
+        <section class=" xl:mt-[80px] mt-8 hidden  md:flex shadow">
+            <div class="w-[90%] sm:w-[68%] right-0 left-0 mx-auto rounded-3xl py-8 px-7 flex justify-between"
+                style="background: linear-gradient(90deg, #10B981 0%, #059669 100%);">
+                <div class="flex items-center gap-x-2">
+                    <img src="./club/diamond.png" class="w-[87px] h-[78px]" alt="">
+
+                    <div class="font-MorabbaMedium text-white">
+                        <p class="text-[24px] xl:text-[48px] font-bold">کافی کلاب</p>
+                        <p class="text-[18px] xl:text-[24px] font-[300]">میدونستی میتونی با امتیاز هات قهوه بگیری ؟</p>
+                    </div>
+                </div>
+
+                <div class="flex  gap-x-3 items-center justify-center">
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-xl p-1.5 ">
+                        <img src="./club/Discovery.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-xl p-1.5 ">
+                        <img src="./club/Ticket-Star.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+                    <div class="w-[72px] h-[72px] bg-white rounded-xl p-1.5 ">
+                        <img src="./club/Activity.svg" class="w-full h-10 mt-1" alt="">
+                        <p class="text-xs font-[400] text-[#059669] mt-1">چرخ و بخت</p>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <div class="text-white font-MorabbaMedium mx-auto ">
+                        <p class="text-[24px] xl:text-[30px] font-bold">542</p>
+                        <p class="text-[18px] xl:text-[14px] font-[300]">امتیـــــــاز شما</p>
+                        <button
+                            class="h-[26px] bg-teal-600 px-auto w-[100px] rounded-xl text-white flex items-center justify-center"
+                            style="background: linear-gradient(270deg, #FDBA74 0%, #FED7AA 100%);">
+                            دریافت جایزه
+
+                            <svg class="w-5 h-5 text-white">
+                                <use href="#chevron-left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div></div>
+        </section>
+
+
+
 
 
     </main>
